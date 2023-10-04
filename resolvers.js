@@ -1,6 +1,6 @@
 // mutation: constructor
 class Product {
-    constructor(id, { name, description, price, soldout, stores }) {
+    constructor(id, { name, description, price, soldout, inventory, stores }) {
         this.id = name;
         this.name = name;
         this.description = description;
