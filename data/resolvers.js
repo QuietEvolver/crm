@@ -8,6 +8,9 @@ const resolvers = {
             else resolve(product)
         });
     },
+    getAllProducts: () => {
+        return Widgets.find({})
+    },
     createProduct: ({ input }) => {
       // creating things in mongo from existing Schema
       const newWidget = new Widgets({
