@@ -28,3 +28,5 @@ const widgetSchema = new mongoose.Schema({
 }); 
 
 const Widgets = mongoose.model('widgets');
+
+export { Widgets };
