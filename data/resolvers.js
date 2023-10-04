@@ -1,6 +1,5 @@
 import { reject } from 'lodash';
-import { Widgets } from '../dbConnectors';
-
+import { Widgets } from './data/dbConnectors.js';
 
 const resolvers = {
     getProduct: ({id}) => {
