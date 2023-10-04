@@ -35,6 +35,14 @@ const resolvers = {
                 else resolve(widget)
             });
         });
+    }, 
+    deleteProduct: ({ id }) => {
+        return new Promise((resolve) => {
+            Widgets.remove({_id: id }, (err) =>{
+                if(err) reject(err)
+                else resolve("Successfully deleted widget")
+            });
+        });
     }
 };
 
