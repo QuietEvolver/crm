@@ -27,9 +27,14 @@ const schema = buildSchema(`
         name: String
         description: String
         price: Float
-        soldout: Boolean
+        soldout: Soldout
         inventory: Int
         stores: [StoreInput]!
+    }
+
+    enum Soldout {
+        SOLDOUT
+        ONSALE
     }
 
     type Mutation {
