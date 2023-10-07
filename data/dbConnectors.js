@@ -1,7 +1,7 @@
 import mongoose, { mongo } from "mongoose";
 import { Sequelize, DataType, DataTypes} from 'sequelize';
 import _ from 'lodash';
-import casual from 'casual'; // allows for creation of word, sentences, nums, aka fake data 
+import casual from 'casual'; // pkg allows for creation of word, sentences, nums, aka fake data 
 
 // Mongo connection
 mongoose.Promise = global.Promise;
