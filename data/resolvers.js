@@ -31,6 +31,16 @@ const resolvers = {
         });
       });
     }, 
+    // vw read (chequear)
+    readProduct: ({ id }) => {
+        return new Promise((resolve) => {
+            Widgets.findById({_id: id }, (err) =>{
+                if(err) reject(err)
+                else resolve(widget)
+            });
+        });
+    },
+    //
     updateProduct: ({input}) => {
         return new Promise ((resolve) => {
             Widgets.findOneAndUpdate({_id: input.id}, input, { new: true }, (err, widget ) => {
